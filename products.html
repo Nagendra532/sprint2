@@ -36,6 +36,9 @@
           <a class="nav-link" href="products.html">products |</a>
         </li>
         <li class="nav-item">
+            <a class="nav-link" href="item-form.html">Item form |</a>
+        </li>
+        <li class="nav-item">
             <a class="nav-link" href="post list.html">Cart |</a>
           </li>
         <li class="nav-item">
@@ -65,48 +68,48 @@
         <h1 style="font-family: Arial, Helvetica, sans-serif"><strong style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
             E-gadgets:</strong></h1>  
         <div id="list-items" class="row">
-            <div class="card col-12 col-sm-12 col-md-3"   style="width: 18rem;">
-                <img src="./images/laptop.jpg" class="card-img-top imgchange"
+            <div class="card col-12 col-sm-12 col-md-3 product"  data-product-id="1" style="width: 18rem;">
+                <img src="images/product1.jpg" class="card-img-top imgchange"
                     alt="image">
                 <div class="card-body">
                     <h5 class="card-title">Laptop</h5>
                     <p><strong>Rs.30000</strong></p>
                     <p class="card-text">Latest version of laptop <Rs class="30000"></Rs></p>
-                    <a href="#" class="btn btn-primary">Add to cart</a>
+                    <button onclick="addToCart(1, 'Laptop', 30000)" class="btn btn-primary add-to-cart" >Add to cart</button>
                 </div>
             </div>
             <br />
-            <div class="card col-12 col-sm-12 col-md-3" style="width: 18rem;">
-                <img src="./images/iphone.jpg" class="card-img-top imgchange"
+            <div class="card col-12 col-sm-12 col-md-3 product"  data-product-id="2"  style="width: 18rem;">
+                <img src="images/product2.jpg" class="card-img-top imgchange"
                     alt="image">
                 <div class="card-body">
                     <h5 class="card-title">Apple iphone</h5>
                     <p><strong>Rs.15000</strong></p>
                     <p class="card-text">Latest model of iphone <Rs class="15000"></Rs></p>
-                    <a href="#" class="btn btn-primary">Add to cart</a>
+                    <button onclick="addToCart(2, 'Apple iphone', 15000)" class="btn btn-primary add-to-cart">Add to cart</button>
                 </div>
             </div>
             <br />
-            <div class="card col-12 col-sm-12 col-md-3" style="width: 18rem;">
-                <img src="./images/earpods.jpg" class="card-img-top imgchange"
+            <div class="card col-12 col-sm-12 col-md-3 product" data-product-id="3" style="width: 18rem;">
+                <img src="images/product3.jpg" class="card-img-top imgchange"
                     alt="image">
                 <div class="card-body">
                     <h5 class="card-title">Ear buds</h5>
                     <p><strong>Rs.1500</strong></p>
                     <p class="card-text">Latest ear buds with fast charging capacity <Rs class="1500"></Rs></p>
-                    <a href="#" class="btn btn-primary">Add to cart</a>
+                    <button onclick="addToCart(3, 'Ear buds', 1500)" class="btn btn-primary add-to-cart" >Add to cart</button>
             
                 </div>
             </div>
             <br/>
-            <div class="card col-12 col-sm-12 col-md-3" style="width: 18rem;">
-                <img src="./images/calci.jpg" class="card-img-top imgchange"
+            <div class="card col-12 col-sm-12 col-md-3 product" data-product-id="4" style="width: 18rem;">
+                <img src="images/product4.jpg" class="card-img-top imgchange"
                     alt="image">
                 <div class="card-body">
                     <h5 class="card-title">Scientific calculater</h5>
                     <p><strong>Rs.850</strong></p>
                     <p class="card-text">Latest scifi calci with more math functions <Rs class="850"></Rs></p>
-                    <a href="#" class="btn btn-primary">Add to cart</a>
+                    <button onclick="addToCart(4, 'Scientific calculator', 850)" class="btn btn-primary add-to-cart">Add to cart</button>
             
                 </div>
             </div>
@@ -115,65 +118,78 @@
         <h1 style="font-family: Arial, Helvetica, sans-serif"><strong style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
             MensWare:</strong></h1>  
         <div id="list-items" class="row">
-            <div class="card col-12 col-sm-12 col-md-3"   style="width: 18rem;">
-                <img src="./images/formal.jpg" class="card-img-top imgchange"
+            <div class="card col-12 col-sm-12 col-md-3 product"  data-product-id="5" style="width: 18rem;">
+                <img src="images/product5.jpg" class="card-img-top imgchange"
                     alt="image">
                 <div class="card-body">
                     <h5 class="card-title">Formal dress</h5>
                     <p><strong>Rs.800</strong></p>
                     <p class="card-text">High quality formal shirt for office <Rs class="800"></Rs></p>
-                    <a href="#" class="btn btn-primary">Add to cart</a>
+                    <button onclick="addToCart(5, 'Formal dress', 800)" class="btn btn-primary add-to-cart">Add to cart</button>
                 </div>
             </div>
             <br />
-            <div class="card col-12 col-sm-12 col-md-3" style="width: 18rem;">
-                <img src="./images/hoodie.jpg" class="card-img-top imgchange"
+            <div class="card col-12 col-sm-12 col-md-3 product" data-product-id="6" style="width: 18rem;">
+                <img src="images/product6.jpg" class="card-img-top imgchange"
                     alt="image">
                 <div class="card-body">
                     <h5 class="card-title">Hoodie</h5>
                     <p><strong>Rs.500</strong></p>
                     <p class="card-text">Top company hoodie while travelling<hoodie-Rs class="500"></hoodie-Rs></p>
-                    <a href="#" class="btn btn-primary">Add to cart</a>
+                    <button onclick="addToCart(6, 'Hoodie', 500)" class="btn btn-primary add-to-cart">Add to cart</button>
                 </div>
             </div>
             <br />
-            <div class="card col-12 col-sm-12 col-md-3" style="width: 18rem;">
-                <img src="./images/suit.jpg" class="card-img-top imgchange"
+            <div class="card col-12 col-sm-12 col-md-3 product" data-product-id="7" style="width: 18rem;">
+                <img src="images/product7.jpg" class="card-img-top imgchange"
                     alt="image">
                 <div class="card-body">
                     <h5 class="card-title">Suit</h5>
                     <p><strong>Rs.1200</strong></p>
                     <p class="card-text">High class suit for formal function <Rs class="1200"></Rs></p>
-                    <a href="#" class="btn btn-primary">Add to cart</a>
+                    <button onclick="addToCart(7, 'Suit', 1200)" class="btn btn-primary add-to-cart">Add to cart</button>
             
                 </div>
             </div>
             <br/>
-            <div class="card col-12 col-sm-12 col-md-3" style="width: 18rem;">
-                <img src="./images/tshirt.jpg" class="card-img-top imgchange"
+            <div class="card col-12 col-sm-12 col-md-3 product" data-product-id="8" style="width: 18rem;">
+                <img src="images/product8.jpg" class="card-img-top imgchange"
                     alt="image">
                 <div class="card-body">
                     <h5 class="card-title">T-shirt</h5>
                     <p><strong>Rs.500</strong></p>
                     <p class="card-text">Cool looking T-shirts for summer <Rs class="500"></Rs></p>
-                    <a href="#" class="btn btn-primary">Add to cart</a>
+                    <button onclick="addToCart(8, 'T-shirt', 500)" class="btn btn-primary add-to-cart">Add to cart</button>
             
                 </div>
             </div>
         </div>
-    </div>
+        <h2 style="text-align: center;">Latest Items added from Item Form </h2><br/>
+        <div class="row" id="cartnew-items">
+         <!-- here the content adds from newpost.js dynamically -->
+            
+            
+        </div>
+
 
     </div>
 
+    </div>
 
 
 
+    
+    
+    <!-- <script src="js/index.js"></script> -->
     <!-- Bootstrap's JavaScript Files -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-
     
+    <!-- <script src="js/products.js"></script> -->
+    <!-- <script src="js/item-form.js"></script> -->
+    <script src="js/itemsController.js"></script>
+    <script src="js/newpost.js"></script>
 </body>
 
 <!--footer section-->

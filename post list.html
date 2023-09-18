@@ -36,6 +36,9 @@
           <a class="nav-link" href="products.html">products |</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="item-form.html">Item form |</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="post list.html">Cart |</a>
         </li>
         <li class="nav-item">
@@ -58,41 +61,28 @@
 
 
 
-<body style="background-image: url('./images/bg.jpg'); opacity: 0.9; background-size: cover; background-repeat: no-repeat;">
-    <div class="row">
-    <table class="cart-table col-12 col-sm-12 col-md-12">
-        <tr>
-          <th>Image</th>
-          <th>Name</th>
-          <th>Price</th>
-          <th>Quantity</th>
-          <th>Total Amount</th>
-        </tr>
-        <tr>
-          <td><img src="./images/laptop.jpg" alt="Product 1"></td>
-          <td>Laptop</td>
-          <td>Rs.30000</td>
-          <td><input type="number" value="2" min="1" max="10"></td>
-          <td><input type="number" value="1" min="1" max="10"></td>
-        </tr>
-        <tr>
-          <td><img src="./images/hoodie.jpg" alt="Product 2"></td>
-          <td>Hoodie</td>
-          <td>Rs.500</td>
-          <td><input type="number" value="2" min="1" max="10"></td>
-          <td><input type="number" value="1" min="1" max="10"></td>
-        </tr>
+<body style="background-image: url('./images/bg.jpg'); opacity: 0.9; background-size: cover; background-repeat: no-repeat; width:100%;">
+    <div class="row cart-items">
+      
+    <table style="background-color: aliceblue; margin-left:10px; text-align: center;" id="cart-items" class="remove-button">
+      <div id="product-form-container">
+        <!-- Form will be inserted here dynamically -->
+    </div>
     </table>
+    <p id="total-amount"></p>
     </div>
 
 
     
+    
+    <!-- <script src="js/index.js"></script>     -->
     <!-- Bootstrap's JavaScript Files -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
-        
+     <!-- <script src="js/itemsController.js"></script> -->
+     <script src="js/postlist.js"></script>
 </body>
 
 <!--footer section-->
